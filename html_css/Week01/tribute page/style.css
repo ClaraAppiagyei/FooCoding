@@ -1,0 +1,65 @@
+#title {
+    font-size: 50px;
+    text-align: center;
+    color: #0A4158;
+    font-family: "Fredericka the Great", Times, serif;
+  }
+  
+  #img-div {
+    width: 100%;
+    height: 300px;
+  }
+  
+  #image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: calc(100% - 90px);
+    border: solid #4B8378
+    
+  }
+  
+  #img-caption {
+    text-align: center;
+    font-size: 30px;
+    background-color: #FF9636;
+  }
+  
+  #tribute-info {
+    font-size: 20px;
+    font-family: "Cormorant Garamond", Times, serif;
+    text-align: justify;
+    padding: 10px 30px;
+    background-color: #E4D7D0;
+    border: solid #4B8378
+  }
+  
+  #Recipe {
+    font-size: 20px;
+    font-family: "Cormorant Garamond", Times, serif;
+    text-align: justify;
+    padding: 10px 30px;
+    background-color: #E4D7D0;
+    border: solid orange;
+     
+  }
+  
+  #recipe_feijoada {
+    float: right;
+    width: 300px;
+    padding: 50px;
+  }
+  
+  h4 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #0A4158;
+    font-family: "Fredericka the Great", Times, serif;
+  }
+  
+  
