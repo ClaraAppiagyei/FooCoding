@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(255, 250, 255);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+header{
+    display: flex;
+    background-color: rgb(252, 81, 48);
+    height: 10vh;
+    justify-content: center;  
+}
+h1, h2{
+    line-height: 1.2;
+    color: white;
+}
+h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(48, 188, 237);
+    font-weight: 400;
+    margin-bottom: 50px;   
+}
+h3{
+    color: rgb(63, 63, 66);
+}
+section {
+    padding: 2%;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 1em;
+}
+ul{
+    list-style: none;
+}
+p{
+    color: rgb(63, 63, 66);
+}
+img{
+    width: 100%; 
+    background-color: white;   
+    display: block;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+.grid-item {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid rgb(252, 84, 48) 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.grid-item:hover{
+    background-color: rgba(48, 188, 237, 0.2)
+}
+#grid li:first-child{
+    grid-column-start: span 2;
+}
+#grid-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 35px 0;
+}
+#grid-flex .grid-item {
+    flex: 25%;
+  }
+  
+#grid-flex li:first-child {
+    flex: 50%;
+  }
+
+
+/*Tablets, Ipads*/
+@media (min-width: 600px) and (max-width: 1024px){
+    #grid{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+    #grid li:first-child{
+        grid-column-start: span 3;
+    }
+    #grid li:nth-child(2){
+        grid-column-start: span 3;
+    }
+    #grid-flex .grid-item {
+        flex: 33.33333333%;
+      }
+      #grid-flex li:nth-child(1) {
+        flex: 50%;
+      }
+      #grid-flex li:nth-child(2) {
+        flex: 50%;
+      }
+}
+
+/*Smartphones*/
+@media (min-width: 320px) and (max-width: 599px){
+    body{
+        margin: 20px 20px;
+    }
+    #grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    #grid-flex .grid-item {
+        flex: 50%;
+      }
+      #grid-flex li:first-child {
+        flex: 100%;
+      }
+}
